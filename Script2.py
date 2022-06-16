@@ -50,7 +50,7 @@ while manage_on:
                     "Sets": sets,
                     "Weight": weight
                 }
-                workout_dict[date] = data
+                workout_dict[date] = [data]
                 with open('workout_data.json', 'w') as f:
                     json.dump(workout_dict, f)
 
